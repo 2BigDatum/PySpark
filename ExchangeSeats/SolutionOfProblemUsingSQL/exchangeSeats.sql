@@ -1,4 +1,3 @@
-/* Write your T-SQL query statement below */
 with cte as(
 select id, student,
 lead(student) over(order by id) leading,
